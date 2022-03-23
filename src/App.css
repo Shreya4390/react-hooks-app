@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.button-d {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 2px;
+  cursor: pointer;
+}
+
+.counter-text {
+  margin: 0px 5px;
+  color: crimson;
+}
+
+.comp_btn {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 5px 20px;
+  border-radius: 3px;
+  margin: 10px 2px;
+  cursor: pointer;
+}

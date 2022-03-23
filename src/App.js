@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import StateHook from './Component/StateHook';
+import EffectHook from './Component/ EffectHook ';
 import './App.css';
 
 function App() {
+  const [flag, setFlage] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Learning Hooks</h1>
+
+      <button className='button-d'
+        onClick={() => {
+          setFlage(true);
+        }}
+      >
+        StateHook
+      </button>
+      <button className='button-d'
+        onClick={() => {
+          setFlage(false);
+        }}
+      >
+        EffectHook
+      </button>
+      {flag ? <StateHook /> : <EffectHook />}
     </div>
   );
 }
