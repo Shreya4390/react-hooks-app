@@ -8,7 +8,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Learning Hooks</h1>
+      <div className="App-container">
+        <span>Learning Hooks</span>
+        <span role="img" aria-label="ice cream"> 🍦</span>
+      </div>
 
       <button className='button-d'
         onClick={() => {

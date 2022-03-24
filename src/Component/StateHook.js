@@ -8,7 +8,7 @@ export default function StateHook() {
     }
 
     return (
-        <div>
+        <div className="st-container">
             StateHook
             <span className="counter-text">{counter}</span>
             <button className='comp_btn'
