@@ -1,10 +1,12 @@
+/* eslint-disable no-mixed-operators */
 import React, { useState } from 'react';
 import StateHook from './Component/StateHook';
-import EffectHook from './Component/ EffectHook ';
+import EffectHook from './Component/EffectHook';
+import CustomHook from './Component/CustomHook/CutomHook';
 import './App.css';
 
 function App() {
-  const [flag, setFlage] = useState(false);
+  const [flag, setFlage] = useState(0);
 
   return (
     <div className="App">
@@ -13,21 +15,29 @@ function App() {
         <span role="img" aria-label="ice cream"> 🍦</span>
       </div>
 
-      <button className='button-d'
+      <button className='button-d tc'
         onClick={() => {
-          setFlage(true);
+          setFlage(1);
         }}
       >
         StateHook
       </button>
-      <button className='button-d'
+      <button className='button-d tc'
         onClick={() => {
-          setFlage(false);
+          setFlage(2);
         }}
       >
         EffectHook
       </button>
-      {flag ? <StateHook /> : <EffectHook />}
+      <button className='button-d tc'
+        onClick={() => {
+          setFlage(3);
+        }}
+      >
+        CustomHook
+      </button>
+
+      {flag === 1 && <StateHook /> || flag === 2 && <EffectHook /> || flag === 3 && <CustomHook />}
     </div>
   );
 }

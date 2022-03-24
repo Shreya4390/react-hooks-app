@@ -1,17 +1,16 @@
 import * as React from 'react';
 
-export default function BlogList(props) {
-    console.log(props)
+const BlogList = ({ headers, handleChange, blogs }) => {
     return (
         <div className="MyTable">
             <table>
                 <tbody>
                     <tr>
-                        {props.headers.map((header, i) => (
+                        {headers.map((header, i) => (
                             <th key={i}>{header}</th>
                         ))}
                     </tr>
-                    {props.blogs?.map((item, key) => {
+                    {blogs?.map((item, key) => {
                         return (
                             <tr key={key}>
                                 <td>{item.id}</td>
@@ -22,8 +21,8 @@ export default function BlogList(props) {
                                     <button
                                         type="button"
                                         id={item.id}
-                                        onClick={() => props.handleDelete(item.id)}
-                                        className="btn btn-sm btn-danger btn-ct"
+                                        onClick={() => handleChange(item.id)}
+                                        className="comp_btn"
                                     >
                                         Delete
                                     </button>
@@ -36,3 +35,5 @@ export default function BlogList(props) {
         </div >
     );
 }
+
+export default BlogList;

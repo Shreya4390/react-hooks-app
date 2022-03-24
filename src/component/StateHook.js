@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "../App.css";
-export default function StateHook() {
+
+const StateHooks = () => {
     const [counter, setCounter] = useState(0)
 
     const increment = () => {
@@ -19,3 +20,4 @@ export default function StateHook() {
         </div >
     )
 }
+export default StateHooks;
