@@ -82,3 +82,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
         useImperativeHandle
         useLayoutEffect
         useDebugValue
+
+https://www.digitalocean.com/community/tutorials/react-usecontext

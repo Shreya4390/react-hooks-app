@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import BlogList from './BlogList';
-import { headers } from '../utils/Constant'
+import { headers } from '../utils/constant'
 import "../App.css";
 
 const EffectHook = () => {

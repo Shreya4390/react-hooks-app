@@ -1,8 +1,8 @@
 /* eslint-disable no-mixed-operators */
 import React, { useState } from 'react';
-import StateHook from './Component/StateHook';
-import EffectHook from './Component/EffectHook';
-import CustomHook from './Component/CustomHook/CutomHook';
+import StateHook from './component/StateHook';
+import EffectHook from './component/EffectHook';
+import CustomHook from './component/customHook/CutomHook';
 import './App.css';
 
 function App() {
